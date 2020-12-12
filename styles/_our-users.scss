@@ -1,0 +1,28 @@
+.partners{
+   padding-bottom: 5rem;
+    .text{
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+        p{
+            color: $gray-text;
+            margin-right: 2rem;
+        }
+        span{
+            display: block;
+            height: 1px;
+            flex: 1;
+            background: #ccc;
+        }
+    }
+
+    &-logos{
+      @extend %flex_sb;
+      align-items: start;
+      flex-wrap: wrap;
+      img{
+          width: 100px;
+      }
+    
+    }
+}

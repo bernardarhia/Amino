@@ -1,0 +1,82 @@
+.services{
+    margin-top: 2rem;
+    &-content{
+        display: flex;
+        gap: 1.3rem;
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 1.2rem;
+           .card{
+               display: flex;
+               flex-direction: column;
+               background: #1e1d20;
+               padding: 1rem 0.8rem 1.5rem 0.8rem;
+               border-radius: 5px;
+               .icon{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-bottom: 1rem;
+                display: grid;
+                place-items: center;
+                &.green{
+                  background: hsla(147, 58%, 52%, 0.149);
+                  color: #3ecb7d;
+                }
+                &.yellow{
+                  background:hsla(43, 95%, 67%, 0.15);
+                  color: #3ecb7d;
+                }
+                &.orange{
+                  background:rgba(255, 80, 53, 0.15);
+                }
+                &.blue{
+                  background: hsla(239, 96%, 62%, 0.151);
+                //   color: ;
+                }
+               }
+               .title{
+                   padding-bottom: .7rem;
+                   p{
+                       font-size: 22px;
+                       font-weight: 500;
+                       color: #fff;
+                   }
+               }
+               .para{
+                padding: 1rem 0;
+                p{
+                    color: rgb(121, 121, 121);
+                    text-align: justify;
+                }
+               }
+           }
+        }
+
+        .text-content{
+          margin-top: 3rem;
+          margin-left: 2rem;
+          .title{
+            padding-bottom: 1rem;
+            h1{
+              font-size: 3rem;
+              color: #fff;
+              line-height: 1.4;
+            }
+          }
+          .para{
+            padding-bottom: 2rem;
+            p{
+              color: rgb(121, 121, 121);
+            }
+          }
+          .cta{
+            .btn{
+              @extend %btn-outline;
+              color: #fff;
+            }
+          }
+        }
+    }
+}

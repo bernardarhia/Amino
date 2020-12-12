@@ -1,0 +1,6 @@
+.cta{
+    .btn-w-bg{
+        @extend %btn-bg;
+        color: #fff;
+    }
+}

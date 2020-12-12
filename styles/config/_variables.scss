@@ -1,0 +1,52 @@
+$main-color:#ff5035;
+$white-text:#fff;
+$gray-text:#575764;
+$active-text:#e13c3f;
+$yellow-card:#fbcd5c;
+$blue-card:#464898;
+$gray-bg:#1f1e21;
+$dark-bg:#1b191d;
+
+%flex_sb{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+%flex_center{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+%auto_center{
+    display: grid;
+    place-items: center;
+}
+%auto{
+    margin: 0 auto;
+}
+
+
+
+%btn{
+    padding: 1rem 2rem;
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+%btn-bg{
+    @extend %btn;
+    background: $main-color;
+    border: none;
+}
+
+%btn-outline{
+    @extend %btn;
+    background: none;
+    border: 1px solid #ccc;
+}
+%btn-full{
+    @extend %btn-bg;
+    widows: 100%;
+    
+}

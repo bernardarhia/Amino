@@ -1,0 +1,106 @@
+.benefit-two{
+padding: 4rem 0;
+display: grid;
+place-items: center;
+.section-content{
+    display: flex;
+    align-items: center;
+
+    .image-content{
+        max-width: 500px;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .card{
+            padding: 1rem;
+            background:#ff5631;
+            display: flex;
+            align-items: center;
+            border-radius: 8px;
+            position: absolute;
+            top: 20%;
+            left: -30%;
+            .logo{
+                height: 25px;
+                width: 25px;
+                background: $yellow-card;
+                display: grid;
+                place-items: center;
+                color: #fff;
+                font-weight: bold;
+                font-size: 14px;
+                border-radius: 50%;
+                margin-right: 1rem;
+                
+            }
+            .text{
+                span{
+                    font-size: 10px;
+                    color:#ccc;
+                    display: block;
+                    margin-bottom: 0.4rem;
+                }
+                p{
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .text-content{
+        margin-left: 5rem;
+        .title{
+            margin-bottom: 1rem;
+            h1{
+                color: #fff;
+                font-size: 3rem;
+                line-height: 1.4;
+                font-weight: 500;
+            }
+        }
+        .para{
+                    width: 80%;
+                    margin-bottom: 2rem;
+                    p{
+                        color: $gray-text;
+                        line-height: 1.3;
+                    }
+        }
+
+    }
+    .cards{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-self: start;
+        .card{
+            padding: 1rem;
+            background: #1e1d20;
+            margin-top: 1rem;
+            max-width: 300px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            .icon{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-right: 1rem;
+                display: grid;
+                place-items: center;
+                &.orange{
+                    background:rgba(255, 80, 53, 0.15);
+                  }
+                  &.blue{
+                    background: hsla(239, 96%, 62%, 0.151);
+                  //   color: ;
+                  }
+            }
+            .head{
+                font-weight: 600;
+                height: 1.3em;
+            }
+        }
+    }
+}
+}

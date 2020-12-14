@@ -17,10 +17,18 @@ body, html{
 .wrapper{
 min-height: 100%;
 margin-bottom: 4rem;
+overflow-x: hidden;
 }
 
 .container{
     max-width: 1040px;
     margin: 4rem auto;
     padding:1.5rem;
+}
+
+
+@media (max-width:470px){
+    h1{
+        font-size: 1.5rem !important;
+    }
 }

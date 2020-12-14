@@ -3,6 +3,10 @@ header{
     padding:1rem;
     .navbar{
         @extend %flex_sb;
+
+        .toggle{
+            display: none;
+        }
         .logo{
             a{
                 color: #fff;
@@ -10,8 +14,14 @@ header{
             }
         }
         .nav-lists{
+            transition: all .5s ease-out;
             flex: 1;
-            @extend %flex_center;
+            @extend %flex_sb;
+            .lists{
+                @extend %flex_center;
+                flex: 1;
+            }
+            transition: all .5s ease-out;
             li{
             padding: 1rem;
             display: grid;
@@ -26,4 +36,38 @@ header{
             }            
         }
     }
+}
+
+@media (max-width:960px){
+    header{
+        .navbar{
+            .toggle{
+                display: block;
+            }
+            .nav-lists{
+               position: fixed;
+               top: 0;
+               left: -100%;
+               bottom: 0;
+               width: 80%;
+               background: #1E1D20;
+               z-index: 5;
+               display: block;
+               .lists{
+                   display: block;
+               }
+               .cta{
+                   button{
+                      width: 100%;
+                   }
+               }
+                li{
+                    margin: 2rem 0;
+               width: 100%;
+                }            
+            }
+        }
+    }
+    
+    
 }

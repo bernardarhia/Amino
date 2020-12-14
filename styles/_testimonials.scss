@@ -16,10 +16,10 @@
     .slider{
      @extend %flex_sb;
      margin-bottom: 1.5rem;
+     gap: 1rem;
      .slide{
          padding: 1rem;
          background: #1e1d20;
-         width: 300px;
          &-head {
              margin-bottom: 1rem;
              @extend %flex_sb;
@@ -67,6 +67,23 @@
         justify-content: center;
         .icon{
             padding-right: 1rem;
+        }
+    }
+}
+
+@media (max-width:768px){
+    .testimonials{
+        height:auto;
+        .slider{
+        display: block;
+         .slide{
+             margin-bottom: 1.6rem;
+             .content{
+                 p{
+                     text-align: center;
+                 }
+             }
+         }
         }
     }
 }

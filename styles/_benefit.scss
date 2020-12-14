@@ -1,8 +1,8 @@
 .benefits{
-    background: url('../images/bg.svg');
+    background: url('../images/icons/bg.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: auto;
     padding: 4rem 0;
     display: grid;
 place-items: center;
@@ -83,3 +83,37 @@ place-items: center;
         }
     }
 }
+
+
+
+// tablet query
+@media (max-width:768px){
+    .benefits{
+        .section-content{
+            display: block;
+            .text-content{
+                display: grid;
+                place-items: center;
+                .title{
+                    h1{
+                        font-size: 2.5rem;
+                    }
+                }
+                .para{
+                  width: 80%;
+                   margin: 0 auto;
+                text-align: center;
+                margin-bottom: 2rem;
+                }
+    
+                .cta{
+                    margin-bottom: 2.4rem;
+                }
+            }
+            .image-content{
+                margin: 0  auto;
+                }
+            }
+        }
+    }
+    

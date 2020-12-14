@@ -78,3 +78,32 @@
         }
     }
 }
+
+
+
+
+@media (max-width:768px){
+    .what-we__do{
+        margin-bottom: 0;
+        display: block;
+        .intro-text{
+            display: grid;
+            place-items: center;
+            .head{
+                text-align: center;
+                h1{
+                    font-size: 2.5rem;
+                }
+            }
+            .para{
+                width:auto;
+                text-align: center;
+            }
+        }
+        .intro-image{
+            display: none;
+        }
+    }
+    
+    
+}

@@ -47,6 +47,8 @@ $dark-bg:#1b191d;
 }
 %btn-full{
     @extend %btn-bg;
-    widows: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
     
 }

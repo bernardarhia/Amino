@@ -8,8 +8,6 @@
             grid-template-columns: repeat(2,1fr);
             grid-gap: 1.2rem;
            .card{
-               display: flex;
-               flex-direction: column;
                background: #1e1d20;
                padding: 1rem 0.8rem 1.5rem 0.8rem;
                border-radius: 5px;
@@ -80,3 +78,48 @@
         }
     }
 }
+
+
+
+@media (max-width:768px){
+  .services{
+    margin-top: 0;
+    &-content{
+      justify-content: center;
+      align-items: center;
+        flex-direction: column-reverse;
+        .text-content{
+          margin: 0 auto;
+          display: grid;
+          place-items: center;
+          .title{
+           text-align: center;
+          }
+          .para{
+            text-align: center;
+          }
+        }
+    }
+}
+}
+
+// smaller device query
+@media (max-width:550px){
+  .services{
+    &-content{
+      .cards{
+        display: block;
+        .card{
+          margin: 2rem 0;
+          display: grid;
+          place-items: center;
+          .para{
+            width: 96%;
+           }
+        }
+      }
+    }
+}
+}
+
+

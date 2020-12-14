@@ -52,6 +52,7 @@ header .navbar .nav-lists .lists {
 body, html {
   height: 100%;
   background: #1b191d;
+  visibility: hidden;
 }
 
 .wrapper {

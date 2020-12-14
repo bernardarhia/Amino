@@ -89,7 +89,7 @@ gsap.from([".services-content .text-content .title",'.services-content .text-con
 opacity: 0,
 y:'50px', 
 stagger:'.2',
-delay:'1'
+delay:'.4'
 })
 
 gsap.from([".benefits .text-content .title",'.benefits .text-content .para','.benefits .text-content .cta'],{
@@ -163,3 +163,25 @@ stagger:'.3'
 
 
 
+
+// testimonials animations
+
+gsap.from([".testimonials .text .title",".testimonials .slider .slide",'.testimonials .show'],{
+  scrollTrigger:{
+    trigger:'.testimonials .slider', 
+  },
+  opacity:0,
+  y:'100px',
+  stagger:'.2'
+})
+
+
+// footer animations
+gsap.from([".footer .head",".footer .para",".footer .form .name",".footer .form .email",".footer .form .submit-btn",".footer .footer-lists .amino",".footer .footer-lists .about",".footer .footer-lists .learn",".footer .footer-lists .story",".footer .footer-lists .hire",".footer .sign-out"],{
+  scrollTrigger:{
+    trigger:'.footer .form .email', 
+  },
+  opacity:0,
+  y:'100px',
+  stagger:'.2'
+})

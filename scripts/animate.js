@@ -63,13 +63,14 @@ gsap.from(".partners .text .line",{
  ease: Power2.easeInOut
 })
 
-gsap.from(".partners .partners-logos",{
+gsap.from(".partners .partners-logos img",{
   scrollTrigger:{
     trigger: '.partners .partners-logos',
   },
   delay:.2,
   opacity:0,
  x:'300px',
+ stagger:'.2'
 })
 
 // services animation
